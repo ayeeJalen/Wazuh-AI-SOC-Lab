@@ -69,7 +69,7 @@ During installation, PowerShell's execution policy initially prevented one of th
 
 The execution policy change was limited to the active PowerShell process.
 
-![Atomic Red Team Setup](screenshots/01-atomic-red-team-setup.png)
+![Atomic Red Team Setup](01-atomic-red-team-setup.png)
 
 ---
 
@@ -99,7 +99,7 @@ Exit code: 0
 
 This confirmed that the simulated activity successfully executed on the Windows endpoint.
 
-![Atomic Red Team Test Execution](screenshots/02-atomic-test-execution.png)
+![Atomic Red Team Test Execution](02-atomic-test-execution.png)
 
 ---
 
@@ -122,8 +122,7 @@ Wazuh successfully generated an alert corresponding with the activity.
 
 The detection showed that Wazuh recognized PowerShell spawning a Windows command shell, which corresponded with the Atomic Red Team activity I intentionally generated.
 
-![Wazuh Detection](screenshots/03-wazuh-detection.png)
-
+![Wazuh Detection](03-wazuh-detection.png)
 ---
 
 ## 4. AI-Assisted Alert Triage
@@ -165,7 +164,7 @@ Its overall assessment was that the activity was:
 
 The AI recommended confirming that the Atomic Red Team test was authorized, reviewing the batch file and resulting child processes, checking for unexpected persistence or network activity, and documenting the event as expected activity if authorization was confirmed.
 
-![AI Alert Triage](screenshots/04-ai-triage.png)
+![AI Alert Triage](04-ai-triage.png)
 
 ---
 
